@@ -14,12 +14,12 @@ export default function Header() {
       <S.ContainerRoute>
         <S.ContainerImage>
           <S.Flag src={Flag} alt="" srcset="" />
-          <h2>Cuiabá (MT)</h2>
+          <S.City>Cuiabá (MT)</S.City>
         </S.ContainerImage>
         <S.Navigation>
           <S.List>
             <Link to="/">Visão Geral</Link>
-            <Link to="./resum">Resmun</Link>
+            <Link to="./resum">Resmuno</Link>
           </S.List>
         </S.Navigation>
       </S.ContainerRoute>

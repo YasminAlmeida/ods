@@ -17,33 +17,83 @@ import Fifteen from '../../assets/images/sdg15.png';
 import Sixteen from '../../assets/images/sdg16.png';
 import Seventeen from '../../assets/images/sdg17.png';
 
+import BallRed from '../../assets/svg/ballred.svg';
+import BallOrange from '../../assets/svg/ballorange.svg';
+import BallYellow from '../../assets/svg/ballyellow.svg';
+import BallGreen from '../../assets/svg/ballgreen.svg';
+import Population from '../../assets/svg/population.svg';
+import Classification from '../../assets/svg/classification.svg';
+import Footer from '../../components/footer/index';
 import * as S from './style';
 
 export default function Home() {
   return (
     <section>
-      <div>
-        <h2>Avaliação Atual</h2>
-        <div>
-          <img src={One} alt="1" />
-          <img src={Two} alt="1" />
-          <img src={Three} alt="1" />
-          <img src={For} alt="1" />
-          <img src={Five} alt="1" />
-          <img src={Six} alt="1" />
-          <img src={Seven} alt="1" />
-          <img src={Eight} alt="1" />
-          <img src={Nine} alt="1" />
-          <img src={Ten} alt="1" />
-          <img src={Eleven} alt="1" />
-          <img src={Twelve} alt="1" />
-          <img src={Thirteen} alt="1" />
-          <img src={Fourteen} alt="1" />
-          <img src={Fifteen} alt="1" />
-          <img src={Sixteen} alt="1" />
-          <img src={Seventeen} alt="1" />
-        </div>
-      </div>
+      <S.SectionHome>
+        <S.Title>Geral</S.Title>
+        <S.FirstBlockInformation>
+          <S.BoxNumber>
+            <img src={Population} alt="Population" />
+            <div>
+              <h4>52,4</h4>
+              <h6>de 100</h6>
+            </div>
+          </S.BoxNumber>
+          <S.BoxNumber>
+            <img src={Classification} alt="Classification" />
+            <div>
+              <h4>1135</h4>
+              <h6>de 100</h6>
+            </div>
+          </S.BoxNumber>
+        </S.FirstBlockInformation>
+        <S.Title>Avaliação Atual</S.Title>
+        <S.SectionImg>
+          <S.ContainerImg>
+            <S.ImgRed src={One} alt="1" />
+            <S.ImgOrange src={Two} alt="1" />
+            <S.ImgRed src={Three} alt="1" />
+            <S.ImgRed src={For} alt="1" />
+            <S.ImgRed src={Five} alt="1" />
+            <S.ImgOrange src={Six} alt="1" />
+            <S.ImgGreen src={Seven} alt="1" />
+            <S.ImgOrange src={Eight} alt="1" />
+            <S.ImgGreen src={Nine} alt="1" />
+            <S.ImgRed src={Ten} alt="1" />
+            <S.ImgRed src={Eleven} alt="1" />
+            <S.ImgRed src={Twelve} alt="1" />
+            <S.ImgOrange src={Thirteen} alt="1" />
+            <S.ImgRed src={Fourteen} alt="1" />
+            <S.ImgOrange src={Fifteen} alt="1" />
+            <S.ImgRed src={Sixteen} alt="1" />
+            <S.ImgYellow src={Seventeen} alt="1" />
+          </S.ContainerImg>
+        </S.SectionImg>
+        <S.SectionLegend>
+          <p>Legenda:</p>
+          <S.ContainerInfo>
+            <S.Svg src={BallGreen} alt="BallGreen" />
+            <p>ODS atingido</p>
+          </S.ContainerInfo>
+          <S.ContainerInfo>
+            <S.Svg src={BallYellow} alt="BallYellow" />
+            <p>Há desafios</p>
+          </S.ContainerInfo>
+          <S.ContainerInfo>
+            <S.Svg src={BallRed} alt="BallRed" />
+            <p>Há grandes desafios</p>
+          </S.ContainerInfo>
+          <S.ContainerInfo>
+            <S.Svg src={BallOrange} alt="BallOrange" />
+            <p>Há desafios significativo</p>
+          </S.ContainerInfo>
+          <S.ContainerInfo>
+            <S.Svg src={BallRed} alt="BallRed" />
+            <p>Há grandes desafios</p>
+          </S.ContainerInfo>
+        </S.SectionLegend>
+      </S.SectionHome>
+      <Footer />
     </section>
   );
 }
