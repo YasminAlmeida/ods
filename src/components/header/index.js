@@ -19,7 +19,7 @@ export default function Header() {
         <S.Navigation>
           <S.List>
             <Link to="/">Visão Geral</Link>
-            <Link to="./resum">Resmuno</Link>
+            <Link to="./resum">Resumo</Link>
           </S.List>
         </S.Navigation>
       </S.ContainerRoute>
